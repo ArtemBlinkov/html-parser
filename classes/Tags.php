@@ -28,6 +28,9 @@ class Tags extends Parser
 
         // чистим теги от лишнего
         $this->tags = $this->getTags($this->parsed_content);
+
+        // чистим свойство парсинга
+        unset($this->parsed_content);
     }
 
     /**
